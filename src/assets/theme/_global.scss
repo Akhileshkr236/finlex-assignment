@@ -1,2 +1,7 @@
 @import "variables";
+@import "custom-mixins";
 @import "custom-icons";
+
+@import "./components-style/buttons";
+//pages
+@import "pages/header";

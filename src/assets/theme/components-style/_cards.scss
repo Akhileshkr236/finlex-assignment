@@ -1,0 +1,12 @@
+.custom-card{
+  &.card{
+    border-color: $gray-03;
+    border-radius: rem(2);
+    .card-body{
+      padding: rem(10);
+    }
+    &.width-200{
+      //max-width: rem(200);
+    }
+  }
+}

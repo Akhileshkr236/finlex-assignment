@@ -1,4 +1,26 @@
 .btn{
   padding: rem(16);
   line-height: $line-height-1;
+  &:focus{
+    box-shadow: none;
+  }
+}
+
+.btn-outline-orange{
+  &.btn{
+    border-color: $orange;
+    color: $orange;
+    &:hover{
+      border-color: $orange-01;
+      color: $orange-01;
+    }
+  }
+}
+
+.btn-secondary{
+  &.btn{
+    border-color: $gray-02;
+    background-color: $gray-02;
+    color: $white;
+  }
 }

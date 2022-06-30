@@ -1,0 +1,81 @@
+
+body{
+  background-color: $body-bg;
+}
+
+.heading{
+  font-family: 'neurialGro';
+  &.h1{
+    @extend .font-size-xl;
+    @extend .text-gray-02;
+  }
+  &.h2{
+    @extend .font-size-21;
+    @extend .text-gray-02;
+  }
+}
+
+//Font size
+
+.font-size-sm{
+  font-size: rem(14) !important;
+}
+.font-size-lg{
+  font-size: rem(18) !important;
+}
+.font-size-21{
+  font-size: rem(21) !important;
+}
+.font-size-xl{
+  font-size: rem(24) !important;
+}
+
+//Margins
+.mt-10{
+  margin-top: rem(10) !important;
+}
+.mb-10{
+  margin-bottom: rem(10) !important;
+}
+
+//Text-color
+
+.text-gray-02{
+  color: #022F37;
+}
+.text-muted{
+  color: $text-muted;
+}
+
+.border-color{
+  border-color: $gray-03;
+}
+
+//Cursor
+.cursor-pointer{
+  cursor: pointer;
+}
+
+
+//container
+
+.main-container{
+  &.container{
+    .row{
+      margin-left: -5px;
+      margin-right: -5px;
+      > *{
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .main-container{
+    &.container{
+      max-width: rem(1440);
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.icon-highlight{
+  width: rem(43);
+  height: rem(43);
+  position: relative;
+  background-color: $theme;
+  border-radius: rem(2) ;
+  i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: rem(11);
+  }
+}

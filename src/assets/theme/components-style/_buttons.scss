@@ -1,6 +1,7 @@
 .btn{
   padding: rem(16);
   line-height: $line-height-1;
+  font-family: $rubik;
   &:focus{
     box-shadow: none;
   }
@@ -8,11 +9,11 @@
 
 .btn-outline-orange{
   &.btn{
-    border-color: $orange;
-    color: $orange;
+    border-color: var(--button-orange);
+    color: var(--black-orange);
     &:hover{
-      border-color: $orange-01;
-      color: $orange-01;
+      border-color: var(--button-orange);
+      color: var(--black-orange);
     }
   }
 }
@@ -20,7 +21,11 @@
 .btn-secondary{
   &.btn{
     border-color: $gray-02;
-    background-color: $gray-02;
-    color: $white;
+    background-color: var(--button-secondary);
+    color: var(--background-color);
   }
+}
+
+.btn-block{
+  width: 100%;
 }

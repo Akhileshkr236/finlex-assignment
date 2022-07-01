@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderComponent } from './shared/header/header.component';
 import { SidebarComponent } from './shared/sidebar/sidebar.component';
+import { FeaturesComponent } from './components/features/features.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    SidebarComponent
+    SidebarComponent,
+    FeaturesComponent
   ],
   imports: [
     BrowserModule,

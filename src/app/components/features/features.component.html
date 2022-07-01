@@ -1,0 +1,146 @@
+<section>
+  <div class="container main-container">
+    <div class="row">
+      <div class="col-xl-3 col-12">
+        <div class="card custom-card mb-10">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <p class="text-muted font-neurialGro font-size-lg mb-0">Lorem Ipsum</p>
+              <button class="btn p-0 line-height-1 font-size-10"><i class="icon-edit text-black-orange opacity-50"></i></button>
+            </div>
+            <hr class="border-color mt-0 mb-10">
+            <div>
+              <div class="d-flex align-items-center">
+                <div class="side-nav-input" [class.invalid]="true">
+                  <p class="heading h5 font-roboto mb-0">Lorem Ipsum</p>
+                  <div class="has-left-icon">
+                    <input type="text" class="form-control" placeholder="Lorem Ipsum" />
+                    <i class="icon-edit text-brand-accent left-icon"></i>
+                  </div>
+                </div>
+                <div class="side-nav-input" [class.invalid]="false">
+                  <p class="heading h5 font-roboto mb-0">Lorem Ipsum</p>
+                  <div class="has-left-icon">
+                    <input type="text" class="form-control" placeholder="Lorem Ipsum" [value]="'Lorem Ipsum'" [readOnly]="true" />
+                    <i class="icon-shield left-icon"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr class="border-color mt-10 mb-10">
+            <div>
+              <div class="d-flex align-items-center">
+                <div class="side-nav-input" [class.invalid]="false">
+                  <p class="heading h5 font-roboto mb-0">Lorem Ipsum</p>
+                  <div class="has-left-icon">
+                    <input type="text" class="form-control" placeholder="Lorem Ipsum" [value]="'Lorem Ipsum'" [readOnly]="true" />
+                    <i class="icon-money-bill left-icon"></i>
+                  </div>
+                </div>
+                <div class="side-nav-input" [class.invalid]="false">
+                  <p class="heading h5 font-roboto mb-0">Lorem Ipsum</p>
+                  <div class="has-left-icon">
+                    <input type="text" class="form-control" placeholder="Lorem Ipsum" [value]="'Lorem Ipsum'" [readOnly]="true" />
+                    <i class="icon-money-bill left-icon"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr class="border-color mt-10 mb-10">
+          </div>
+        </div>
+        <div class="card custom-card mb-10">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <p class="font-neurialGro text-muted font-size-lg mb-0">Lorem Ipsum</p>
+              <button class="btn p-0 line-height-1 font-size-10"><i class="icon-edit text-black-orange opacity-50"></i></button>
+            </div>
+            <hr class="border-color mt-0">
+            <div>
+              <div class="custom-collapse">
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="font-roboto text-black-light-gray mb-0">
+                    <span class="badge badge-soft-danger mr-10">2</span>
+                    Lorem Ipsum
+                  </p>
+                  <button type="button" class="btn p-1 line-height-1 font-size-10 text-muted" (click)="collapse1.toggle()" [attr.aria-expanded]="!isCollapsed1"
+                          aria-controls="collapseExample"><i [ngClass]="isCollapsed1? 'icon-chevron-down':'icon-chevron-up'"></i></button>
+                </div>
+                <div class="mt-10" #collapse1="ngbCollapse" [(ngbCollapse)]="isCollapsed1">
+                  <div>
+                    <span class="badge font-size-xs font-weight-normal p-1s">Lorem Ipsum</span>
+                  </div>
+                </div>
+              </div>
+              <div class="custom-collapse">
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="font-roboto text-black-light-gray mb-0">
+                    <span class="badge badge-soft-warning mr-10">8</span>
+                    Lorem Ipsum
+                  </p>
+                  <button type="button" class="btn p-1 line-height-1 font-size-10 text-muted" (click)="collapse2.toggle()" [attr.aria-expanded]="!isCollapsed2"
+                          aria-controls="collapseExample"><i [ngClass]="isCollapsed2? 'icon-chevron-down':'icon-chevron-up'"></i></button>
+                </div>
+                <div class="mt-10" #collapse2="ngbCollapse" [(ngbCollapse)]="isCollapsed2">
+                  <div>
+                    <span class="badge font-size-xs font-weight-normal p-1">Lorem Ipsum</span>
+                  </div>
+                </div>
+              </div>
+              <div class="custom-collapse">
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="font-roboto text-black-light-gray mb-0">
+                    <span class="badge badge-soft-success mr-10">0</span>
+                    Lorem Ipsum
+                  </p>
+                  <button type="button" class="btn p-1 line-height-1 font-size-10 text-muted" (click)="collapse3.toggle()" [attr.aria-expanded]="!isCollapsed3"
+                          aria-controls="collapseExample"><i [ngClass]="isCollapsed3? 'icon-chevron-down':'icon-chevron-up'"></i></button>
+                </div>
+                <div class="mt-10" #collapse3="ngbCollapse" [(ngbCollapse)]="isCollapsed3">
+                  <div>
+                    <span class="badge font-size-xs font-weight-normal p-1">Lorem Ipsum</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr class="border-color mt-10 mb-10">
+            <button class="btn btn-outline-orange btn-block text-left">Lorem Ipsum</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-9 col-12">
+        <div class="row">
+          <div class="col-6">
+            <div class="card custom-card">
+              <div class="card-body">
+                <p class="heading text-white-black font-rubik h1 mb-2">€ 0.000.000,00</p>
+                <p class="text-muted mb-0">lorem ipsum dolor sit amet</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card custom-card">
+              <div class="card-body">
+                <p class="heading text-white-black font-rubik h1 mb-2">€ 0.000.000,00</p>
+                <p class="text-muted mb-0">lorem ipsum dolor sit amet</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col-xl-3 col-lg-4 col-md-6 col-12" *ngFor="let list of features; index as i">
+            <div class="card custom-card width-200 cursor-pointer mb-10">
+              <div class="card-body">
+                <div class="icon-highlight mb-10">
+                  <i [class]="list.icon"></i>
+                </div>
+                <p class="text-muted mb-10">{{list.title}}</p>
+                <p class="text-black-light-gray mb-0">{{list.description}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

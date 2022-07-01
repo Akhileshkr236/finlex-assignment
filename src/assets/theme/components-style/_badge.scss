@@ -1,0 +1,20 @@
+.badge{
+  padding: rem(5) rem(13);
+  font-size: rem(14);
+  font-weight: $font-weight-medium;
+}
+
+.badge-soft-warning{
+  background-color: rgba($yellow, 0.05);
+  color: $yellow;
+}
+
+.badge-soft-danger{
+  background-color: rgba($orange, 0.05);
+  color: $danger;
+}
+
+.badge-soft-success{
+  background-color: rgba($green, 0.05);
+  color: $green;
+}

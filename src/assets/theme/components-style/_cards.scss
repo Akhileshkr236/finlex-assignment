@@ -1,7 +1,8 @@
 .custom-card{
   &.card{
-    border-color: $gray-03;
+    border-color: var(--border-color);
     border-radius: rem(2);
+    background-color: var(--card-bg);
     .card-body{
       padding: rem(10);
     }

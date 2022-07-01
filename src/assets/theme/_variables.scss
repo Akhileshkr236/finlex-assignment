@@ -23,6 +23,7 @@ $orange-06: #E9CDBD;
 $orange-07: #D4C9BF;
 $orange-08: #ECE9E0;
 $orange-09: #ECEAE0;
+$brown: #2C2727;
 $red: #EC1515;
 $yellow: #FBC70F;
 $green: #1EAF61;
@@ -51,6 +52,23 @@ $theme-colors: map-merge((
   "danger": $danger,
   "white": $white), $theme-colors);
 // stylelint-enable
+
+.light-theme{
+  --background-color: #E5E5E5;
+  --text-color: #022F37;
+  --box-shadow: 0 1px rgb(0, 0, 0, 0.1);
+  --border-color: #D1D1D1;
+  --card-bg: #ffffff;
+}
+
+.dark-theme{
+  --background-color: #2C2727;
+  --text-color: #ffffff;
+  --box-shadow: 0 1px rgba(#fff, 0.1);
+  --border-color: #A3A3A3;
+  --card-bg: #121111;
+}
+
 
 //Line height
 

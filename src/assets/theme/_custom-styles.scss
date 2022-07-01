@@ -1,6 +1,7 @@
 
 body{
-  background-color: $body-bg;
+  background-color: var(--background-color);
+  transition: all 0.3s;
 }
 
 .heading{

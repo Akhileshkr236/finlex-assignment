@@ -1,2 +1,15 @@
 @import "variables";
+@import "custom-mixins";
 @import "custom-icons";
+
+@import "./components-style/fonts";
+@import "./components-style/buttons";
+@import "./components-style/cards";
+@import "./components-style/badge";
+@import "./components-style/custom-collapse";
+//pages
+
+@import "./pages/advantages";
+
+@import "custom-styles";
+@import "pages/header";

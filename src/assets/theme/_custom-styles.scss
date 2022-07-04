@@ -1,0 +1,128 @@
+
+body{
+  background-color: var(--background-color);
+  transition: all 0.3s;
+}
+
+.heading{
+  font-family: 'neurialGro';
+  &.h1{
+    @extend .font-size-xl;
+  }
+  &.h2{
+    @extend .font-size-21;
+  }
+  &.h5{
+    @extend .font-size-xs;
+    @extend .text-muted;
+  }
+}
+
+//Font size
+
+.font-size-10{
+  font-size: rem(10) !important;
+}
+.font-size-xs{
+  font-size: rem(12) !important;
+}
+.font-size-sm{
+  font-size: rem(14) !important;
+}
+.font-size-lg{
+  font-size: rem(18) !important;
+}
+.font-size-21{
+  font-size: rem(21) !important;
+}
+.font-size-xl{
+  font-size: rem(24) !important;
+}
+//Font weight
+
+.font-weight-normal{
+  font-weight: $font-weight-normal;
+}
+//Margins
+.mt-10{
+  margin-top: rem(10) !important;
+}
+.mb-10{
+  margin-bottom: rem(10) !important;
+}
+.ml-10{
+  margin-left: rem(10) !important;
+}
+.mr-10{
+  margin-right: rem(10) !important;
+}
+
+//Text-color
+
+.text-gray-02{
+  color: $theme;
+}
+.text-muted{
+  color: var(--button-secondary) !important;
+}
+.text-black{
+  color: $black !important;
+}
+.text-orange{
+  color: $orange;
+}
+
+.text-black-light-gray{
+  color: var(--black-light-gray);
+}
+
+.text-brand-accent{
+  color: var(--brand-accent);
+}
+
+.text-black-orange{
+  color: var(--black-orange);
+}
+
+.text-white-black{
+  color: var(--white-black);
+}
+
+.border-color{
+  border-color: $gray-03;
+}
+
+//Text align
+.text-left{
+  text-align: left !important;
+}
+
+//Cursor
+.cursor-pointer{
+  cursor: pointer;
+}
+
+
+//Custom styles
+
+//container
+
+.main-container{
+  &.container{
+    max-width: 100% !important;
+    .row{
+      margin-left: -5px;
+      margin-right: -5px;
+      > *{
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  .text-sm-left{
+    text-align: left !important;
+  }
+}

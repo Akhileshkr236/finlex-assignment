@@ -1,0 +1,13 @@
+.custom-collapse{
+  margin-bottom: rem(10);
+  .collapse, .collapsing{
+    padding-left: rem(44);
+    .badge{
+      background-color: var(--dark-light-blue);
+      color: var(--white-black);
+    }
+  }
+  &:nth-last-child(1){
+    margin-bottom: 0;
+  }
+}

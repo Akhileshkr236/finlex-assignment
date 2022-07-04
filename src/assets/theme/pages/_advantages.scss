@@ -1,0 +1,68 @@
+.icon-highlight{
+  width: rem(43);
+  height: rem(43);
+  position: relative;
+  background-color: var(--brand-accent);
+  border-radius: rem(2) ;
+  i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: rem(11);
+    color: var(--black-white);
+  }
+}
+
+.side-nav-input{
+  margin-right: rem(10);
+  border-right: rem(1) solid var(--border-color);
+  padding-right: rem(10);
+  &:nth-last-child(1){
+    margin-right: 0;
+    border-right: 0;
+    padding-right: 0;
+  }
+  &.invalid{
+    .form-control{
+      border-color: $danger;
+    }
+    .has-left-icon{
+      .left-icon{
+        background: $danger;
+        color: $white;
+      }
+    }
+  }
+}
+
+
+.has-left-icon{
+  position: relative;
+  .form-control{
+    border-color: transparent;
+    background-color: transparent;
+    color: var(--white-black);
+    padding: 0 rem(12) 0 rem(20);
+    height: rem(17);
+    font-size: rem(14);
+    &:focus{
+      box-shadow: none;
+    }
+    &:read-only{
+      background-color: transparent;
+      color: var(--button-secondary);
+    }
+  }
+  .left-icon{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: rem(17);
+    border-radius: rem(3) 0 0 rem(3);
+    padding: 3px;
+    color: var(--brand-accent);
+    font-size: rem(10);
+  }
+}

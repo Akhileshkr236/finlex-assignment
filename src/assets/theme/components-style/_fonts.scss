@@ -1,0 +1,27 @@
+@font-face {
+  font-family: $neurialGro;
+  src: url(../fonts/NeurialGrotesk-Regular.otf);
+  font-weight: $font-weight-normal;
+}
+
+@font-face {
+  font-family: $rubik;
+  src: url(../fonts/Rubik-Regular.ttf);
+  font-weight: $font-weight-normal;
+}
+
+@font-face {
+  font-family: $roboto;
+  src: url(../fonts/Roboto-Regular.ttf);
+  font-weight: $font-weight-normal;
+}
+
+.font-roboto{
+  font-family: $roboto !important;;
+}
+.font-rubik{
+  font-family: $rubik !important;
+}
+.font-neurialGro{
+  font-family: $neurialGro !important;
+}
